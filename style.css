@@ -72,3 +72,9 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+/* in mobile first approch this have no effect */
+.hum-menu,
+li:hover {
+  cursor: pointer;
+}
