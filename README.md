@@ -43,7 +43,3 @@ This project is not deployed to any web hosting platfrom, but if any one wants t
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.
