@@ -193,7 +193,7 @@ li:hover {
   cursor: none;
 }
 
-.btn:after {
+.btn::after {
   background: #2230d2;
   color: #fff;
   transition: all 0.8s;
@@ -217,6 +217,7 @@ li:hover {
   font-weight: bold;
   color: #253858;
 }
+
 .drop-options {
   display: flex;
   flex-direction: column;
