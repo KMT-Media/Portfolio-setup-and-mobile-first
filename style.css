@@ -128,14 +128,14 @@ li:hover {
   line-height: 16px;
 }
 
-ul.frame-item > :first-child {
+.frame-item > :first-child {
   list-style-type: none;
   text-transform: uppercase;
   color: #344563;
 }
 
-ul.frame-item li:nth-child(2),
-ul.frame-item li:nth-child(3) {
+.frame-item li:nth-child(2),
+.frame-item li:nth-child(3) {
   margin-left: 25px;
   color: #7a869a;
 }
