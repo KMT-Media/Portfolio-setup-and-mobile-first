@@ -128,14 +128,14 @@ li:hover {
   line-height: 16px;
 }
 
-.frame-item > :first-child {
+ul.frame-item > :first-child {
   list-style-type: none;
   text-transform: uppercase;
   color: #344563;
 }
 
-.frame-item li:nth-child(2),
-.frame-item li:nth-child(3) {
+ul.frame-item li:nth-child(2),
+ul.frame-item li:nth-child(3) {
   margin-left: 25px;
   color: #7a869a;
 }
@@ -155,11 +155,11 @@ li:hover {
   height: 24px;
   display: flex;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
 }
 
-.categories li {
+ul.categories li {
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
