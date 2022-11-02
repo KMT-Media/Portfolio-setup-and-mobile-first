@@ -254,6 +254,8 @@ li:hover {
 .contact-form {
   height: 800px;
   background: url(./assets/images/contact\ form\ shapes-mobile@2x.png);
+  background-repeat: no-repeat;
+  background-position: cover;
   padding: 130px 24px 20px 24px;
   display: flex;
   flex-direction: column;
@@ -321,7 +323,6 @@ input:focus {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  align-self: center;
 }
 
 .form-btn:hover {
