@@ -162,7 +162,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="btn">See Project</button>
+          <button type="button" class="btn">See Project</button>
         </div>
       </div>
       <div class="card-works">
@@ -188,7 +188,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="btn">See Project</button>
+          <button type="button" class="btn">See Project</button>
         </div>
       </div>
       <div class="card-works">
@@ -214,7 +214,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="btn">See Project</button>
+          <button type="button" class="btn">See Project</button>
         </div>
       </div>
       <div class="card-works">
@@ -240,7 +240,7 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <button class="btn">See Project</button>
+          <button type="button" class="btn">See Project</button>
         </div>
       </div>
     </section>
@@ -343,7 +343,7 @@
           </a>
         </li>
       </ul>
-      <button class="btn">Get my resume</button>
+      <button type="button" class="btn">Get my resume</button>
       <ul class="drop-options">
         <li class="drop-options-list">
           <ul class="hidden-options-title">
@@ -444,5 +444,40 @@
         </li>
       </ul>
     </section>
+
+    <footer class="contact-form">
+      <div class="text-container">
+        <h2 class="primary-text">Contact me</h2>
+        <p class="paragraph-details">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+      </div>
+      <form action="https://formspree.io/f/xyyvbnal" method="post">
+        <input
+          type="text"
+          placeholder="Enter name..."
+          required
+          maxlength="30"
+          name="user_name"
+        />
+        <input
+          type="email"
+          placeholder="email@example.com"
+          name="user_email"
+          required
+        />
+        <textarea
+          cols="30"
+          rows="10"
+          maxlength="500"
+          name="user_message"
+          placeholder="Write your message here..."
+          required
+        ></textarea>
+        <button type="submit" class="form-btn">Get in Touch</button>
+      </form>
+    </footer>
   </body>
 </html>
