@@ -29,6 +29,30 @@ header {
   margin-left: 8px;
   font-weight: 700;
   line-height: 20px;
+  position: relative;
+
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes logo {
+  0% {
+    left: -300px;
+  }
+  25% {
+    left: 0;
+  }
+  50% {
+    left: -10px;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    left: -10px;
+  }
 }
 
 .logo a {
@@ -330,6 +354,17 @@ input {
   font-weight: 500;
   border-radius: 8px;
   padding: 16px 15px;
+}
+
+input,
+textarea {
+  transition-property: transform;
+  transition-duration: 1.2s;
+}
+
+input:hover,
+textarea:hover {
+  transform: scale(1.1);
 }
 
 input::placeholder {
