@@ -332,6 +332,10 @@ input {
   padding: 16px 15px;
 }
 
+/* label {
+  display: none;
+} */
+
 input::placeholder {
   color: #000;
   font-size: 17px;

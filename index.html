@@ -391,25 +391,31 @@
         </p>
       </div>
       <form action="https://formspree.io/f/xyyvbnal" method="post">
+        <label hidden for="name">Full Name: </label>
         <input
           type="text"
           placeholder="Enter name..."
           required
           maxlength="30"
           name="user_name"
+          id="name"
         />
+        <label hidden for="email">Email: </label>
         <input
           type="email"
           placeholder="email@example.com"
           name="user_email"
+          id="email"
           required
         />
+        <label hidden for="message">Message: </label>
         <textarea
           cols="30"
           rows="10"
           maxlength="500"
           name="user_message"
           placeholder="Write your message here..."
+          id="message"
           required
         ></textarea>
         <button type="submit" class="form-btn">Get in Touch</button>
