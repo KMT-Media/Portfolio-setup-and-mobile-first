@@ -332,10 +332,6 @@ input {
   padding: 16px 15px;
 }
 
-/* label {
-  display: none;
-} */
-
 input::placeholder {
   color: #000;
   font-size: 17px;
@@ -505,8 +501,6 @@ input:focus {
 @media (max-width: 768px) {
   .headline {
     background: url(./assets/images/Header\ bg@2x.png);
-    /* background-position: center;
-    background-size: cover; */
     min-height: 550px;
   }
 
