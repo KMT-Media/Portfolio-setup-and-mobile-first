@@ -11,10 +11,6 @@
 
 * HTML and CSS
 
-- Technologies used:
-
-* Linters
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -23,10 +19,10 @@ To get a local copy up and running follow these simple example steps.
 
 Any one who wants to use this project should have at least the basic knowledge of HTML and CSS.
 
-### Install
+### Installation
 
-To install this project, copy the url of this project repo and simply run the following command to install.
-`git clone <url>`
+Simply run the following command to copy the repo in your local storage.
+`git clone https://github.com/KMT-Media/Portfolio-setup-and-mobile-first`
 
 ### Usage
 
@@ -34,7 +30,11 @@ This project will help you to build a mobile first website of the front page of 
 
 ### Deployment
 
-This project is not deployed to any web hosting platfrom, but if any one wants to deploy this project feel free to do so.
+You can see the project deployed here (https://kmt-media.github.io/)
+
+## Presentation
+
+Live presentation (https://www.loom.com/share/3dc86fcbbda94969a73485d77690672e)
 
 ## Author
 
