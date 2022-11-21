@@ -3,10 +3,6 @@ const openMenu = document.querySelector('.open-menu');
 const closeMenu = document.querySelector('.close-menu');
 const listItems = document.querySelectorAll('ul.nav-menu > li');
 
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
-listItems.forEach((item) => item.addEventListener('click', close));
-
 function show() {
   navMenu.style.display = 'flex';
   navMenu.style.top = '0';
@@ -19,3 +15,7 @@ function close() {
   openMenu.style.display = 'block';
   closeMenu.style.display = 'none';
 }
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+listItems.forEach((item) => item.addEventListener('click', close));
