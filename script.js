@@ -4,7 +4,7 @@ const closeMenu = document.querySelector('.close-menu');
 const listItems = document.querySelectorAll('ul.nav-menu > li');
 const formName = document.getElementById('name');
 const formEmail = document.getElementById('email');
-const formMessage = document.getElementById('message');
+// const formMessage = document.getElementById('message');
 const form = document.getElementById('form');
 const submitButton = document.getElementById('submit-button');
 const errorElement = document.getElementById('error');
@@ -29,27 +29,31 @@ listItems.forEach((item) => item.addEventListener('click', close));
 // ==== JS form validation ====
 
 form.addEventListener('submit', (e) => {
-  let messages = [];
+ // ==== change const to let   
+  const messages = [];
 
   if (formName.value.trim() === '' || formName.value.trim() === null) {
     messages.push('Name is required!!!');
   }
 
   //  ==== If statement goes here ====
+  
+ // === Delete this line after if statement   
+  e.preventDefault();
 });
 
 function createLocalStorage() {
-  let myObject = {
+  const myObject = {
     name: formName.value,
     email: formEmail.value,
     message: formMessage.value,
   };
 
-  let myObjectSerialized = JSON.stringify(myObject);
+  const myObjectSerialized = JSON.stringify(myObject);
 
   localStorage.setItem('myObject', myObjectSerialized);
 
-  let myObjectDeSerialized = JSON.parse(localStorage.getItem('myObject'));
+  const myObjectDeSerialized = JSON.parse(localStorage.getItem('myObject'));
 
   if (myObjectDeSerialized) {
     formName.value = myObjectDeSerialized.name;
