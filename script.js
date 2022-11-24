@@ -29,14 +29,20 @@ listItems.forEach((item) => item.addEventListener('click', close));
 // ==== JS form validation ====
 
 form.addEventListener('submit', (e) => {
-  const messages = [];
+  let messages = [];
 
   if (formName.value.trim() === '' || formName.value.trim() === null) {
     messages.push('Name is required!!!');
   }
+  if (/[A-Z]/.test(formEmail.value.trim())) {
+    messages.push('Emails should be in LowerCase');
+  }
 
-  //  ==== If statement goes here ====
-  e.preventDefault();
+  if (messages.length > 0) {
+    e.preventDefault();
+    errorElement.innerText = messages.join(', ');
+  }
+
 });
 
 function createLocalStorage() {
