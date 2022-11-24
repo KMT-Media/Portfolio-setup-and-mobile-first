@@ -7,7 +7,7 @@ const formEmail = document.getElementById('email');
 const formMessage = document.getElementById('message');
 const form = document.getElementById('form');
 const submitButton = document.getElementById('submit-button');
-// const errorElement = document.getElementById('error');
+const errorElement = document.getElementById('error');
 
 function show() {
   navMenu.style.display = 'flex';
@@ -29,7 +29,7 @@ listItems.forEach((item) => item.addEventListener('click', close));
 // ==== JS form validation ====
 
 form.addEventListener('submit', (e) => {
-  let messages = [];
+  const messages = [];
 
   if (formName.value.trim() === '' || formName.value.trim() === null) {
     messages.push('Name is required!!!');
@@ -42,7 +42,6 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     errorElement.innerText = messages.join(', ');
   }
-
 });
 
 function createLocalStorage() {
