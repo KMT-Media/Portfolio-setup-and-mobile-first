@@ -1,41 +1,168 @@
-# Portfolio-setup-and-mobile-first
+<a name="readme-top"></a>
 
-> Description the project.
+<div align="center">
 
-- set up a new repository and prepare it for development using best practices (e.g. linters).
-- build the first 2 sections of the mobile website using the template you chose in the figma.
+  <img src="https://github.com/microverseinc/readme-template/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-## Built With
+</div>
 
-- Major languages:
+<!-- TABLE OF CONTENTS -->
 
-* HTML and CSS
+# 📗 Table of Contents
 
-## Getting Started
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-To get a local copy up and running follow these simple example steps.
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [Protfolio Website] <a name="about-project"></a>
+
+> This project is about building my personal portfolio website.
+
+**[Protfolio Website]** is a website where I show my previous works, what I am currently working on, my personal interests and my contact address.
+
+## 🛠 Built With <a name="built-with"></a>
+
+- HTML
+- CSS
+- JavaScript
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Here are the list of key features of this website.
+
+- **Easy to use**
+- **Optimized for mobile**
+- **Well Designed and funcitional**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+[Live Demo Link](https://kmt-media.github.io/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> This project is about building a personal portfolio website using html, css and javascript. So, any one who whats to use this project should have atleast the basics of these technologies.
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-Any one who wants to use this project should have at least the basic knowledge of HTML and CSS.
+In order to run this project you need: A personal computer, a VS code installed on your computer to edit the code the way you want and a browser in your computer to see the output.
 
-### Installation
+### Setup
 
-Simply run the following command to copy the repo in your local storage.
-`git clone https://github.com/KMT-Media/Portfolio-setup-and-mobile-first`
+Clone this repository to your desired folder:
+
+```
+  cd  folder-name
+  git clone https://github.com/KMT-Media/Portfolio-setup-and-mobile-first.git
+```
 
 ### Usage
 
-This project will help you to build a mobile first website of the front page of your portfolio website
+To check and run linters in your code, execute the following command:
+
+```
+  npm insatall
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+`npx hint .` to test for HTML errors/inconsistencies.
+
+`npx stylelint "**/*.{css,scss}"` to check for style issues.
+
+`npx eslint .` to check for Javascript issues.
 
 ### Deployment
 
-You can see the project deployed here (https://kmt-media.github.io/)
+You can deploy this project using: [Github Pages] (https://pages.github.com/)
 
-## Author
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Kidus Tadesse**
 
 - GitHub: [@KMT-Media](https://github.com/KMT-Media)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/KidusTadesse2)
 
-## Show your support
+👤 **Wilhelm Naayole Kamulunga**
 
-Give a ⭐️ if you like this project!
+- GitHub: [@githubhandle](https://github.com/WilhelmK109)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> The following are the list of technologies I want to add to this project.
+
+- [ ] **Frontend Frameworks like React**
+- [ ] **Databases like MongoDB and MySql**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## Show your support <a name="support"></a>
+
+> If you like this project please contact me we will build more fun projects together. Also give a ⭐️ if you like this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> I would like to deeply give thanks to everyone contributing in this project especially microverse, who inspires me to do this project.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
