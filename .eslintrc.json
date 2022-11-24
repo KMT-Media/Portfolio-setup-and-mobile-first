@@ -22,5 +22,6 @@
       }
     ]
   },
+  "linebreak-style": ["error", "windows"],
   "ignorePatterns": ["dist/", "build/"]
 }
