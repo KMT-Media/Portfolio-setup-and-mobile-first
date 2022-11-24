@@ -32,10 +32,6 @@ This project will help you to build a mobile first website of the front page of 
 
 You can see the project deployed here (https://kmt-media.github.io/)
 
-## Presentation
-
-Live presentation (https://www.loom.com/share/3dc86fcbbda94969a73485d77690672e)
-
 ## Author
 
 - GitHub: [@KMT-Media](https://github.com/KMT-Media)
