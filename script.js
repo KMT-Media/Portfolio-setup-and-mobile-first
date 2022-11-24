@@ -26,6 +26,18 @@ openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 listItems.forEach((item) => item.addEventListener('click', close));
 
+// ==== JS form validation ====
+
+form.addEventListener('submit', (e) => {
+  let messages = [];
+
+  if (formName.value.trim() === '' || formName.value.trim() === null) {
+    messages.push('Name is required!!!');
+  }
+
+  //  ==== If statement goes here ====
+});
+
 function createLocalStorage() {
   let myObject = {
     name: formName.value,
