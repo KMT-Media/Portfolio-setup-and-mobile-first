@@ -50,7 +50,7 @@ function createLocalStorage() {
 
   localStorage.setItem('myObject', myObjectSerialized);
 
-  let myObjectDeSerialized = JSON.parse(localStorage.getItem('myObject'));
+  const myObjectDeSerialized = JSON.parse(localStorage.getItem('myObject'));
 
   if (myObjectDeSerialized) {
     formName.value = myObjectDeSerialized.name;
