@@ -88,7 +88,7 @@ Clone this repository to your desired folder:
 To check and run linters in your code, execute the following command:
 
 ```
-  npm insatall
+  npm install
 ```
 
 ### Run tests
