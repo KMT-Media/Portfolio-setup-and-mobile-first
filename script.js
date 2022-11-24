@@ -4,10 +4,10 @@ const closeMenu = document.querySelector('.close-menu');
 const listItems = document.querySelectorAll('ul.nav-menu > li');
 const formName = document.getElementById('name');
 const formEmail = document.getElementById('email');
-// const formMessage = document.getElementById('message');
+const formMessage = document.getElementById('message');
 const form = document.getElementById('form');
 const submitButton = document.getElementById('submit-button');
-const errorElement = document.getElementById('error');
+// const errorElement = document.getElementById('error');
 
 function show() {
   navMenu.style.display = 'flex';
@@ -29,18 +29,16 @@ listItems.forEach((item) => item.addEventListener('click', close));
 // ==== JS form validation ====
 
 form.addEventListener('submit', (e) => {
- // ==== change const to let   
+  // Change const to let   
   const messages = [];
 
   if (formName.value.trim() === '' || formName.value.trim() === null) {
     messages.push('Name is required!!!');
   }
 
-  //  ==== If statement goes here ====
-  
- // === Delete this line after if statement   
+  // If statement goes here   
   e.preventDefault();
-});
+  });
 
 function createLocalStorage() {
   const myObject = {
