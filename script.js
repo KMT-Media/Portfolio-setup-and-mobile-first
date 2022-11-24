@@ -29,22 +29,19 @@ listItems.forEach((item) => item.addEventListener('click', close));
 // ==== JS form validation ====
 
 form.addEventListener('submit', (e) => {
-  // Change const to let   
   const messages = [];
-
   if (formName.value.trim() === '' || formName.value.trim() === null) {
     messages.push('Name is required!!!');
   }
-
   // If statement goes here   
   e.preventDefault();
   });
 
-function createLocalStorage() {
-  const myObject = {
-    name: formName.value,
-    email: formEmail.value,
-    message: formMessage.value,
+  function createLocalStorage() {
+    const myObject = {
+      name: formName.value,
+      email: formEmail.value,
+      message: formMessage.value,
   };
 
   const myObjectSerialized = JSON.stringify(myObject);
