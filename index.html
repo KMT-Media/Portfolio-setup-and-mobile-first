@@ -11,6 +11,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="popup.css" />
     <title>My Portfolio</title>
   </head>
   <body>
@@ -81,112 +82,8 @@
       </section>
     </section>
 
-    <section class="works" id="portfolio">
-      <div class="card-works">
-        <img
-          src="./assets/images/Snapshoot Portfolio.png"
-          alt="Snapshoot Portfolio"
-        />
-        <div class="card-details">
-          <h2 class="primary-text">Tonic</h2>
-          <div class="frame">
-            <ul class="frame-item">
-              <li>Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p class="paragraph-details">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="categories">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <button type="button" class="btn">See Project</button>
-        </div>
-      </div>
-      <div class="card-works">
-        <div class="card-details">
-          <h2 class="primary-text">Multi-Post Stories</h2>
-          <div class="frame">
-            <ul class="frame-item">
-              <li>Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p class="paragraph-details">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="categories">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <button type="button" class="btn">See Project</button>
-        </div>
-        <img
-          src="./assets/images/Snapshoot Portfolio2.png"
-          alt="Snapshoop Portfolio 2"
-        />
-      </div>
-      <div class="card-works">
-        <img
-          src="./assets/images/Snapshoot Portfolio3.png"
-          alt="Snapshoop Portfolio 3"
-        />
-        <div class="card-details">
-          <h2 class="primary-text">Tonic</h2>
-          <div class="frame">
-            <ul class="frame-item">
-              <li>Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p class="paragraph-details">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="categories">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <button type="button" class="btn">See Project</button>
-        </div>
-      </div>
-      <div class="card-works">
-        <div class="card-details">
-          <h2 class="primary-text">Multi-Post Stories</h2>
-          <div class="frame">
-            <ul class="frame-item">
-              <li>Canopy</li>
-              <li>Back End Dev</li>
-              <li>2015</li>
-            </ul>
-          </div>
-          <p class="paragraph-details">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
-          <ul class="categories">
-            <li>html</li>
-            <li>css</li>
-            <li>javascript</li>
-          </ul>
-          <button type="button" class="btn">See Project</button>
-        </div>
-        <img
-          src="./assets/images/Snapshoot Portfolio4.png"
-          alt="Snapshoop Portfolio 4"
-        />
-      </div>
-    </section>
+    <section class="works" id="portfolio"></section>
+    <section class="popup-section" id="popup-menu"></section>
 
     <section class="about" id="about1">
       <div class="about-left">
@@ -339,12 +236,11 @@
           with it
         </p>
       </div>
-      <form action="https://formspree.io/f/xyyvbnal" method="post">
+      <form action="https://formspree.io/f/xyyvbnal" method="post" id="form">
         <label hidden for="name">Full Name: </label>
         <input
           type="text"
           placeholder="Enter name..."
-          required
           maxlength="30"
           name="user_name"
           id="name"
@@ -355,7 +251,6 @@
           placeholder="email@example.com"
           name="user_email"
           id="email"
-          required
         />
         <label hidden for="message">Message: </label>
         <textarea
@@ -365,12 +260,16 @@
           name="user_message"
           placeholder="Write your message here..."
           id="message"
-          required
         ></textarea>
-        <button type="submit" class="form-btn">Get in Touch</button>
+        <button type="submit" class="form-btn" id="submit-button">
+          Get in Touch
+        </button>
       </form>
+      <div id="error"></div>
     </section>
 
     <script src="./script.js"></script>
+    <script src="./modal.js"></script>
+
   </body>
 </html>
