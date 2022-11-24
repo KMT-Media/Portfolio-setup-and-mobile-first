@@ -30,25 +30,27 @@ listItems.forEach((item) => item.addEventListener('click', close));
 
 form.addEventListener('submit', (e) => {
   const messages = [];
+
   if (formName.value.trim() === '' || formName.value.trim() === null) {
     messages.push('Name is required!!!');
   }
-  // If statement goes here   
-  e.preventDefault();
-  });
 
-  function createLocalStorage() {
-    const myObject = {
-      name: formName.value,
-      email: formEmail.value,
-      message: formMessage.value,
+  //  ==== If statement goes here ====
+  e.preventDefault();
+});
+
+function createLocalStorage() {
+  const myObject = {
+    name: formName.value,
+    email: formEmail.value,
+    message: formMessage.value,
   };
 
   const myObjectSerialized = JSON.stringify(myObject);
 
   localStorage.setItem('myObject', myObjectSerialized);
 
-  const myObjectDeSerialized = JSON.parse(localStorage.getItem('myObject'));
+  let myObjectDeSerialized = JSON.parse(localStorage.getItem('myObject'));
 
   if (myObjectDeSerialized) {
     formName.value = myObjectDeSerialized.name;
